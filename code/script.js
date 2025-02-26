@@ -247,6 +247,7 @@ else{
 console.log(greeting)
 */
 
+/* 
 let isStudent = true;
 //let message = isStudent ? `You are a student` : `ou are NOT a student`;
 let message;
@@ -259,3 +260,54 @@ else{
 }
 
 console.log(message);
+*/
+
+/*
+let purchaseAmount = 290;
+//let discount = purchaseAmount >= 100 ? `10` : `0`
+
+if(purchaseAmount >= 100){
+    discount = 10;
+}
+else{
+    discount = 0;
+}
+
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`)
+*/
+
+
+
+
+
+
+/*
+let day = 3;
+switch(day){
+    case 1:
+        console.log(`It is Monday`);
+        break;
+    case 2:
+        console.log(`It is Tuesday`);
+        break;
+    case 3:
+        console.log(`It is Wednesday`);
+        break;
+    case 4:
+        console.log(`It is Thursday`);
+        break;
+    case 5:
+        console.log(`It is Friday`);
+        break;
+    case 6:
+        console.log(`It is Saturnday`);
+        break;
+    case 7:
+        console.log(`It is Sunday`);
+        break;
+    default:
+        console.log(`${day} is not a day`);
+        break;
+}
+*/
+
