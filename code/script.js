@@ -141,6 +141,8 @@ myButton.onclick = function(){
 
 
 
+/*
+// site que identifica o quao velho vc e//
 
 const myText = document.getElementById(`myText`)
 const mySubmit = document.getElementById(`mySubmit`)
@@ -172,3 +174,88 @@ mySubmit.onclick = function(){
         resultElement.textContent = `You must be 18+ to enter this site`
     }
 }
+
+*/
+
+
+
+/*
+
+// checked property //
+const myCheckbox = document.getElementById(`myCheckbox`)
+const visaBtn = document.getElementById(`visaBtn`)
+const mastercardBtn = document.getElementById(`mastercardBtn`)
+const paypalBtn = document.getElementById(`paypalBtn`)
+const mySubmit = document.getElementById(`mySubmit`)
+const subResult = document.getElementById(`subResult`)
+const paymentResult = document.getElementById(`paymentResult`)
+
+mySubmit.onclick = function(){
+    if(myCheckbox.checked){
+        subResult.textContent = `You are subscribed`;
+    }
+    else{
+        subResult.textContent = `You are not subscribed`;
+    }
+
+    if(visaBtn.checked){
+        paymentResult.textContent = `You are paying with visa`
+    }
+    else if(mastercardBtn.checked){
+        paymentResult.textContent = `You are paying with mastercard`
+    }
+    else if(paypalBtn.checked){
+        paymentResult.textContent = `You are paying with paypal`
+    }
+    else{
+        paymentResult.textContent = `Select a payment type`
+    }
+
+}
+
+*/
+
+
+
+
+/*
+let age = 38;
+//let message = age >= 18 ? "You are an adult" : "You are a minor";
+let message;
+
+if(age >= 18){
+    message = `You are an adult`;
+}
+else{
+    message =`ou are a minor`;
+}
+
+console.log(message)
+*/
+/*
+let time = 10;
+//let greeting = time < 12 ? `Good morning!` : `Good afternoon!`
+let greeting;
+
+if(time < 12){
+    greeting = `Good morning!`
+}
+else{
+    greeting = `Good afternoon!`
+}
+
+console.log(greeting)
+*/
+
+let isStudent = true;
+//let message = isStudent ? `You are a student` : `ou are NOT a student`;
+let message;
+
+if(isStudent){
+    message = `You are a student`
+}
+else{
+    message = `You are not a student`
+}
+
+console.log(message);
