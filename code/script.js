@@ -311,4 +311,41 @@ switch(day){
 }
 */
 
+let testScore = 20;
+let letterGrade;
 
+switch(true){
+    case testScore >= 90:
+        letterGrade = `A`;
+        break;
+    case testScore >= 80:
+        letterGrade = `B`;
+        break;
+    case testScore >= 70:
+        letterGrade = `C`;
+        break;
+    case testScore >= 60:
+        letterGrade = `D`;
+        break;
+    default:
+        letterGrade = `F`
+}
+
+console.log(letterGrade);
+
+
+                                   /* if(testScore >= 90){
+                                        letterGrade = `A`
+                                    }
+                                    else if(testScore >= 80){
+                                        letterGrade = `B`
+                                    }
+                                    else if(testScore >= 70){
+                                        letterGrade = `C`
+                                    }
+                                    else if(testScore >= 60){
+                                        letterGrade = `D`
+                                    }
+                                    else{
+                                        letterGrade = `F`
+                                    } */ 
