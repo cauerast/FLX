@@ -311,6 +311,7 @@ switch(day){
 }
 */
 
+/*
 let testScore = 20;
 let letterGrade;
 
@@ -332,20 +333,35 @@ switch(true){
 }
 
 console.log(letterGrade);
+*/
 
 
-                                   /* if(testScore >= 90){
-                                        letterGrade = `A`
-                                    }
-                                    else if(testScore >= 80){
-                                        letterGrade = `B`
-                                    }
-                                    else if(testScore >= 70){
-                                        letterGrade = `C`
-                                    }
-                                    else if(testScore >= 60){
-                                        letterGrade = `D`
-                                    }
-                                    else{
-                                        letterGrade = `F`
-                                    } */ 
+
+
+// string methods //
+/*
+let username = `FLXX`;
+console.log(username.charAt(2));
+console.log(username.indexOf("X"));
+console.log(username.lastIndexOf("X"));
+console.log(username.length);
+
+username = username.toUpperCase();
+username = username.repeat(3);
+console.log(username)
+*/
+/*
+let username = "FLX";
+let result = username.includes(" ");
+
+if(result){
+    console.log(`Your username can't inclsude (space)`)
+}
+else{
+    console.log(username)
+}
+*/
+
+let phonenumber = `123-456-7890`;
+phonenumber = phonenumber.replaceAll(`-`, ``);
+console.log(phonenumber);
