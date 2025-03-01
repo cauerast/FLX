@@ -361,7 +361,96 @@ else{
     console.log(username)
 }
 */
-
+/*
 let phonenumber = `123-456-7890`;
-phonenumber = phonenumber.replaceAll(`-`, ``);
+phonenumber = phonenumber.padEnd(15, `0`);
 console.log(phonenumber);
+*/
+
+
+// STRING SLICING // 
+/*
+const fullName = `Flx caue`;
+//let firstName = fullName.slice(0, 3);
+//let lastName  = fullName.slice(4,8);
+//let firstChar = fullName.slice()
+let firstName = fullName.slice(0, fullName.indexOf(` `))
+let lastName = fullName.slice(fullName.indexOf(` `) + 1)
+console.log(firstName);
+console.log(lastName);
+*/
+/*
+const email = `Damn@gmail.com`;
+let username = email.slice(0, email.indexOf(`@`));
+let extension = email.slice(email.indexOf(`@`) +1);
+console.log(username);
+console.log(extension);
+*/
+
+
+
+// NO METHOD CHAINING //
+/*
+let username = window.prompt(`Enter your username: `);
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
+let extraChars = username.slice(1);
+extraChars = extraChars.toLowerCase();
+username = letter + extraChars;
+console.log(username);
+*/
+
+// METHOD CHAINING //
+/*
+let username = window.prompt(`Enter your username: `);
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+console.log(username)
+*/
+
+
+
+// LOGICAL OPERATORS //
+/*
+const temp = 220;
+
+if(temp > 0 && temp <= 30){
+    console.log(`The weather is GOOD`)
+}
+else{
+    console.log(`The weater is BAD`)
+}
+
+// && - and
+// || - or
+// ! - not 
+*/
+
+
+
+// WHILE LOOP //
+/*
+let username = "";
+while(username === "" || username === null){
+    username = window.prompt(`Enter your name:`);
+}
+
+console.log(`Hello ${username}`); 
+*/
+
+let loggedIn = false;
+let username;
+let password;
+
+while(!loggedIn){
+    username = window.prompt(`Enter your username`)
+    password = window.prompt(`Enter your password`)
+
+    if(username === `myUsername` && password === `myPassword`){
+        loggedIn = true
+        console.log(`You are logged In`)
+    }
+    else{
+        console.log(`Invalid credentials! Please try again`)
+    }
+}
