@@ -559,3 +559,26 @@ function isValidEmail(email){
 console.log(isValidEmail(`bro@fake.com`));
 */
 
+
+
+// VARIABLE SCOPE // 
+/*
+let x = 3;
+
+function1();
+
+function function1(){
+    let x = 1;
+    console.log(x);
+}
+
+function function2(){
+    let x = 2;
+    console.log(x);
+}
+*/
+
+
+
+// Temperature conversion js //
+
