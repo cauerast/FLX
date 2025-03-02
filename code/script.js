@@ -437,7 +437,7 @@ while(username === "" || username === null){
 
 console.log(`Hello ${username}`); 
 */
-
+/*
 let loggedIn = false;
 let username;
 let password;
@@ -454,3 +454,12 @@ while(!loggedIn){
         console.log(`Invalid credentials! Please try again`)
     }
 }
+
+*/
+
+
+// FOR LOOP //
+for(let i = 0; i <= 2; i++){
+    console.log(i)
+}
+
