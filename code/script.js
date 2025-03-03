@@ -636,3 +636,51 @@ submitBtn.onclick = function convert(){
 
 */
 
+
+
+
+// ARRAYS // and // a little bit od for loops // 
+
+
+//fruits[3] = `Coconut`; 
+// or - fruits.push(`Coconut`); // -- but it tooks the item to the end of array -- 
+// fruits.pop(); // -- desapear w some item in array
+// index = position in js
+
+/*
+let fruits = [`Apple`, `Orange`, `Banana`, `Coconut`];
+for(let i = 0; i < fruits.length; i++){
+    console.log(fruits[i]);
+}
+*/
+
+
+/*
+let cats = [`Yuki`, `Hanabi`, `Lya`];
+for(let i = 0; i < cats.length; i++){
+    console.log(cats[i]);
+}
+*/
+
+
+
+/*
+for(let i = 1; i <= 22; i++){
+
+    if(i == 17){
+        continue;
+    }
+    else{
+        console.log(i);
+    }
+}
+    */
+
+
+/*
+let cats = [`a`, `b`, `c`];
+for(let i = 0; i < cats.length; i++){
+    console.log(cats[i]);
+}
+    */
+
