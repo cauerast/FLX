@@ -607,6 +607,10 @@ function convert(){
 }
     */
 
+
+// Temperature conversion js // V2 
+
+/*
 const textBox = document.getElementById(`textBox`);
 const toFahrenheit = document.getElementById(`toFahrenheit`);
 const toCelsius = document.getElementById(`toCelsius`);
@@ -629,3 +633,6 @@ submitBtn.onclick = function convert(){
         result.textContent = `Select a unit to convert`
     }
 }
+
+*/
+
