@@ -676,11 +676,40 @@ for(let i = 1; i <= 22; i++){
 }
     */
 
-
 /*
+
 let cats = [`a`, `b`, `c`];
+cats.sort();
 for(let i = 0; i < cats.length; i++){
     console.log(cats[i]);
 }
-    */
 
+*/
+
+
+
+
+// spread operator (...) to discompact a array for example // 
+
+// with no (...) --> numbers = array ; with(...) --> numbers = bumbers now, because i discompact it // 
+
+/*
+let numbers = [1 ,2, 3, 4, 5];
+let maximum = Math.max(...numbers); 
+let minimum = Math.min(...numbers);
+console.log(minimum);
+*/
+
+/*
+let username = `CaueRast`;
+let letters = [...username].join(`-`);
+console.log(letters);
+*/
+
+/*
+let fruits = [`Apple`, `orange`, `banana`];
+let vegetables = [`carrots`, `celery`, `potatoes`];
+
+let foods = [...fruits, ...vegetables];
+console.log(foods);
+*/
