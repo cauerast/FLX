@@ -713,3 +713,82 @@ let vegetables = [`carrots`, `celery`, `potatoes`];
 let foods = [...fruits, ...vegetables];
 console.log(foods);
 */
+
+
+// rest parameters // 
+/*
+function sum(...numbers){
+    let total = 0;
+    for (let number of numbers) {
+      total += number;
+    }
+    console.log(total);
+  }
+  
+  sum(10, 20, 30, 40);
+  // Resultado: 100
+  */
+
+/*
+const numbers = [10, 20, 30, 40, 50];
+const [first, second, ...rest] = numbers;
+
+console.log(first); // 10
+console.log(second); // 20
+console.log(rest); // [30, 40, 50]
+*/
+
+/*
+function adultNumbers(...numbers) {
+    const adults = numbers.filter(num => num >= 18);
+    console.log(adults);
+  }
+  
+  adultNumbers(10, 25, 30, 5, 50);
+*/
+
+/*
+  function getMaxNumber(...numbers){
+    return Math.max(...numbers);
+  }
+  console.log(getMaxNumber(10, 45, 22, 99, 7));
+  */
+
+  //🚨 Desafio Extra:
+  //Agora cria a função getEvenNumbers usando filter + rest para retornar só os números pares!
+  //Modelo:
+
+/*
+function getEvenNumbers(...numbers){
+    return numbers.filter(num => num % 2 === 0);
+}
+
+console.log(getEvenNumbers(10, 45, 22, 99, 7));
+
+*/
+
+/*
+function sum(...numbers){
+
+    let result = 0;
+    for(let number of numbers){
+        result += number;
+    }
+    return result;
+}
+const total = sum(1, 2, 3, 4, 5);
+console.log(`your total is $${total}`);
+*/
+
+
+/*
+function sum(...numbers){
+    let x = 0;
+    for(let number of numbers){
+         x += number;
+    }
+    return x;
+}
+const total = sum(1, 2, 3, 4, 5);
+console.log(`your total is $${total}`);
+*/
