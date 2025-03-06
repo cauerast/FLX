@@ -1052,9 +1052,9 @@ function isChild(element){
 function isAdult(element){
     return element >= 18;
 }
-    */
+*/
 
-
+/*
 const words = [`apple`, `orange`, `banana`, `kiwi`, `coconut`, `pomegranate`];
 const shortWords = words.filter(getShortWords);
 const longWords = words.filter(getLongWords);
@@ -1070,3 +1070,4 @@ function getShortWords(element){
 function getLongWords(element){
     return element.length > 6;
 }
+*/
