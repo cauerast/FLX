@@ -830,7 +830,7 @@ console.log(fullName);
 
 // ramdom password generator //
 
-
+/*
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols){
 
     const lowercaseChars = `abcdefghijklmnopqrstuvwxyz`;
@@ -869,4 +869,96 @@ const includeSymbols = true;
 
 const password = generatePassword(passwordLenght, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
 console.log(`Generated password: ${password}`);
+*/
+
+
+// callbacks // 
+/*
+
+hello(wait);
+
+function hello(callback){
+    console.log(`Hello!`);
+    callback();
+}
+
+function wait(){
+    console.log(`Wait!`);
+}
+*/
+
+/*
+
+sum(displayPage, 1, 2)
+
+function sum(callback, x, y){
+    let result = x + y;
+    callback(result);
+}
+
+function displayConsole(result){
+    console.log(result);
+}
+
+function displayPage(result){
+    document.getElementById(`myh1`).textContent = result;
+}
+    */
+
+
+
+// forEach() // 
+
+ // -- for math -- // 
+ /*
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(cube);
+numbers.forEach(display);
+
+function double(element, index, array){
+    array[index] = element * 2;
+}
+
+function triple(element, index, array){
+    array[index] = element * 3;
+}
+
+function square(element, index, array){
+    array[index] = Math.pow(element, 2);
+}
+
+function cube(element, index, array){
+    array[index] = Math.pow(element, 3);
+    
+}
+
+function display(element){
+    console.log(element);
+}
+*/
+
+ // -- fruits -- // 
+let fruits = [`apple`, `orange`, `banana`, `coconut`];
+
+fruits.forEach(capitalize);
+fruits.forEach(display);
+
+
+function upperCase(element, index, array ){
+    array[index] = element.toUpperCase();
+}
+
+function lowerCase(element, index, array ){
+    array[index] = element.toLowerCase();
+}
+
+function capitalize(element, index, array ){
+    array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+}
+
+
+function display(element){
+    console.log(element);
+}
 
