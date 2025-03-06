@@ -264,7 +264,7 @@ console.log(message);
 
 /*
 let purchaseAmount = 290;
-//let discount = purchaseAmount >= 100 ? `10` : `0`
+// let discount = purchaseAmount >= 100 ? `10` : `0`;
 
 if(purchaseAmount >= 100){
     discount = 10;
@@ -805,7 +805,7 @@ const total = sum(1, 2, 3, 4, 5);
 console.log(`your total is $${total}`);
 */
 
-
+/*
 function getAverage(...numbers){
     let result = 0;
     for(let number of numbers){
@@ -815,13 +815,58 @@ function getAverage(...numbers){
 }
 const total = getAverage(75, 100, 85, 90, 50);
 console.log(total);
+*/ 
 
 
 
+// Combining Strings // 
+/*
 function combineStrings(...strings){
     return strings.join(` `);
 }
 const fullName = combineStrings(`Mr.`, `Spongebob`, `Squarepants`, `III`);
 console.log(fullName);
+*/
 
+// ramdom password generator //
+
+
+function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols){
+
+    const lowercaseChars = `abcdefghijklmnopqrstuvwxyz`;
+    const uppercaseChars = `ABCDEFGHIJKLMNOPQRSTUVWXYZ`;
+    const numberChars = `0123456789`;
+    const symbolChars = `!@#$%^&*()_-+=`;
+
+    let allowedChars = ``;
+    let password = ``;
+
+    allowedChars += includeLowercase ? lowercaseChars : ``;
+    allowedChars += includeUppercase ? uppercaseChars : ``;
+    allowedChars += includeNumbers ? numberChars : ``;
+    allowedChars += includeSymbols ? symbolChars : ``;
+
+    if(length <= 0){
+        return `(password length must be at least 1)`;
+    }
+    if(allowedChars.length === 0){
+        return `(At least 1 set of character needs to be selected)`;
+    }
+
+    for(let i = 0; i < length; i++){
+        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+        password += allowedChars[randomIndex];
+    }
+    
+    return password;
+}
+
+const passwordLenght = 92;
+const includeLowercase = true;
+const includeUppercase = true;
+const includeNumbers = true;
+const includeSymbols = true;
+
+const password = generatePassword(passwordLenght, includeLowercase, includeUppercase, includeNumbers, includeSymbols)
+console.log(`Generated password: ${password}`);
 
