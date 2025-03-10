@@ -1188,5 +1188,3 @@ console.log(total);
 */
 
 // //
-
-
