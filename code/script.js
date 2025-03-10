@@ -1187,4 +1187,104 @@ console.log(oddNums);
 console.log(total);
 */
 
-// //
+// object = {key:value, function()} // 
+/*
+const person1 = {
+    firstName: `SpongeBob`,
+    lastName: `Squarepants`,
+    age: 30,
+    isEmployed: true,
+    sayHello: function(){console.log(`Hi! Im SpongeBob`)}, // legacy function
+    eat: function(){console.log(`Im eating a krabby patty`)}, // legacy function
+}
+
+const person2 = {
+    firstName: `Patrick`,
+    lastName: `Star`,
+    age: 24,
+    isEmployed: false,
+    sayHello: () => console.log(`Hey, im Patrick...`), // arrow fn
+    eat: () => console.log(`Im eating roast beaf...`), // arrow fn
+}
+*/
+
+// using THIS // 
+// this = make reference to a object where THIS is used (the object depends on the immediate context person.name = this.name); // 
+
+/*
+const person1 = {
+    name: `SpongeBob`,
+    favFood: `Hamburguers`,
+    sayHello: function(){console.log(`Hi! im ${this.name}`)},
+    eat: function(){console.log(`${this.name} is eating ${this.favFood}`)},
+}
+const person2 = {
+    name: `Patrick`,
+    favFood: `pizza`,
+    sayHello: function(){console.log(`Hi! im ${this.name}`)},
+    eat: function(){console.log(`${this.name} is eating ${this.favFood}`)},
+}
+
+person1.sayHello();
+person2.sayHello();
+person1.eat();
+person2.eat();
+*/
+
+
+
+// constructor = special method for defining the properites and methods of objects.
+/*
+function car(make, model, year, color){
+    this.make = make,
+    this.model = model, 
+    this.year = year,
+    this.color = color,
+    this.drive = function(){console.log(`You drive the ${this.model}`)}
+}
+
+const car1 = new car(`Ford`, `mustang`, 2024, `red`);
+const car2 = new car(`chevrolet`, `camaro`, 2025, `blue`);
+
+const car3 = {
+    make: `Ford`,
+    model: `Mustang`,
+    year: 2024,
+    color: `Red`,
+    drive: function(){console.log(`You drive the ${this.model}`)}
+}
+
+const car4 = {
+    make: `dodge`,
+    model: `charger`,
+    year: 2026,
+    color: `silver`,
+    drive: function(){console.log(`You drive the ${this.model}`)}
+}
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+car1.drive()
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+car2.drive();
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);
+car3.drive();
+
+console.log(car4.make);
+console.log(car4.model);
+console.log(car4.year);
+console.log(car4.color);
+car4.drive();
+*/
+
+
+// class = provides a more structured and cleaner way to work with objects compared to tradicional contructor functions - ex. static keyword, encapsulation, inheritance.
