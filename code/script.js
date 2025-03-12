@@ -1288,9 +1288,9 @@ car4.drive();
 
 
 // class = provides a more structured and cleaner way to work with objects compared to tradicional contructor functions - ex. static keyword, encapsulation, inheritance.
-/*
 
-class product{
+/*
+class Product{
     constructor(name, price){
         this.name = name;
         this.price = price;
@@ -1307,13 +1307,64 @@ class product{
 }
 
 const salesTax = 0.05;
-const product1 = new product(`Shirt`, 19.99);
-const product2 = new product(`Pants`, 22.50);
-const product3 = new product(`underwear`, 100.00);
+const product1 = new Product(`Shirt`, 19.99);
+const product2 = new Product(`Pants`, 22.50);
+const product3 = new Product(`underwear`, 100.00);
 
-let productShowed = product2.displayProduct();
+product1.displayProduct();
 
-
-const total = productShowed.calculateTotal(salesTax);
+const total = product1.calculateTotal(salesTax);
 console.log(`Your total is ${total.toFixed(2)}`);
 */
+
+
+// static = word that defines properties or methods that belong to a class itself rather than the object created from that class (class owns anything static, not the object)
+
+/*
+class MathUtil{
+    static PI = 3.14159;
+
+    static getDiameter(radius){
+        return radius * 2;
+    }
+    static getCircumference(radius){
+        return 2 * this.PI * radius;
+    }
+    static getArea(radius){
+        return this.PI * Math.pow(radius, 2);
+    }
+}
+console.log();
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(10));
+console.log(MathUtil.getArea(10));
+*/
+
+/*
+class User{
+    static userCount = 0;
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+    static getUserCount(){
+        console.log(`There are ${User.userCount} users online`)
+    }
+    sayHello(){
+        console.log(`Hello, my username is ${this.username}`);
+    }
+}
+
+const user1 = new User(`Spongebob`);
+const user2 = new User(`Patrick`);
+const user3 = new User(`Sandy`);
+
+user1.sayHello();
+user2.sayHello();
+user3.sayHello();
+
+
+User.getUserCount();
+*/
+
