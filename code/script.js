@@ -1539,7 +1539,8 @@ console.log(rectangle.height);
 console.log(rectangle.area);
 */
 
-/*
+
+
 class Person{
     constructor(firstName, lastName, age){
         this.firstName = firstName;
@@ -1596,5 +1597,5 @@ console.log(person.firstName);
 console.log(person.lastName);
 console.log(person.fullname);
 console.log(person.age);
-*/
+
 
