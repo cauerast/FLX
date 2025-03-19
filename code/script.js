@@ -1733,7 +1733,7 @@ const person3 = new Person(`Squidward`, 45, `126 Conch St.`, `Bikini Bottom`, `I
 console.log(person3.address.street);
 */
 
-const fruits = [{name: `apple`, color: `red`, calories: 95}, {name: `orange`, color: `oragne`, calories: 45}, {name: `banana`, color: `yellow`, calories: 105}, {name: `coconut`, color: `white`, calories: 159}, {name: `pineapple`, color: `yellow`, calories: 37}];
+const fruits = [{name: `apple`, color: `red`, calories: 95}, {name: `orange`, color: `orange`, calories: 45}, {name: `banana`, color: `yellow`, calories: 105}, {name: `coconut`, color: `white`, calories: 159}, {name: `pineapple`, color: `yellow`, calories: 37}];
 
 
 console.log(fruits[2].name); // show a especific patern
@@ -1751,10 +1751,25 @@ fruits.splice(1, 2); // remove a specifics array elements
 fruits.forEach(fruit => console.log(fruit.name)); // for each fruit in fruits, show the fruit(name)
 
 // map
-const fruitNames = fruit.map(fruit => fruit.name);
-const fruitColors = fruit.map(fruit => fruit.color);
-const fruitCalories = fruit.map(fruit => fruit.calories);
-
+const fruitNames = fruits.map(fruit => fruit.name); // map a array fruits in name
+const fruitColors = fruits.map(fruit => fruit.color); // map a array fruits in color
+const fruitCalories = fruits.map(fruit => fruit.calories); // map a array fruits in calories
 console.log(fruitNames);
 console.log(fruitColors);
 console.log(fruitCalories);
+
+
+// filter 
+const yellowFruits = fruits.filter(fruit => fruit.color === "yellow"); // show in array who element got a specific condition ( in case, the yellow color);
+const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+const highCalFruits = fruits.filter(fruit => fruit.calories >= 100);
+console.log(yellowFruits);
+console.log(lowCalFruits);
+console.log(highCalFruits);
+
+
+// reduce()
+const maxFruit = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit : max);
+const minFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
+console.log(maxFruit);
+console.log(minFruit);
