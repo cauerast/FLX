@@ -1842,5 +1842,3 @@ const randomNumber = numbers[randomIndex];
 
 console.log(randomNumber)
 */
-
-const ten = 10
