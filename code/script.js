@@ -1842,3 +1842,6 @@ const randomNumber = numbers[randomIndex];
 
 console.log(randomNumber)
 */
+
+let globs = document.getElementById("x")
+XMLDocument.onclick = DocumentTimeline
