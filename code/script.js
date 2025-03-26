@@ -903,14 +903,15 @@ function displayConsole(result){
 function displayPage(result){
     document.getElementById(`myh1`).textContent = result;
 }
-    */
+*/
+
 
 
 
 // forEach() // 
 
- // -- for math -- // 
- /*
+// -- for math -- // 
+/*
 let numbers = [1, 2, 3, 4, 5];
 
 numbers.forEach(cube);
@@ -1843,5 +1844,135 @@ const randomNumber = numbers[randomIndex];
 console.log(randomNumber)
 */
 
-let globs = document.getElementById("x")
-XMLDocument.onclick = DocumentTimeline
+
+/*
+// date objects - Date(year, month, day, hour, minute, second, ms)
+
+// current date
+const date = new Date();
+console.log(date); // the current date
+
+// or we can show the date in parts by using js functions
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDate(); // day in number
+//const dayWeek = date.getDay() // day in the week
+const hour = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+console.log(year);
+console.log(month);
+console.log(day);
+console.log(hour);
+console.log(minutes);
+console.log(seconds);
+
+//we can set a date using functions
+const date0 = new Date
+date.setFullYear(2024);
+date.setMonth(0);
+date.setDate(1);
+date.setHours(2);
+date.setMinutes(3);
+date.setSeconds(4);
+
+// we can admit a date by following the extruture
+const date1 = new Date(2024, 0, 1, 2, 3, 4, 5);
+console.log(date1);
+
+// we can admit a date by string
+const date2 = new Date("2024-01-02T12:00:00");
+console.log(date2);
+
+// the 0 date - epic date
+const date3 = new Date(0);
+console.log(date3);
+
+// 17000000000000ms after the epic date
+const date4 = new Date(17000000000000);
+console.log(date4);
+
+//we can compare dates
+
+const date5 = new Date("2024-12-31");
+const date6 = new Date("2025-01-01");
+if(date6 > date5){
+    console.log("Happy new year!");
+}
+*/
+
+
+// closure = a function defined inside of another function, the inner function has acces to the variables and scope of the outer function. Allow for private variables and state maintenance. Used frequently in JS frameworks: React, Vue, Angular.
+
+/*
+function outer(){
+    let message = "Hello";
+
+    function inner(){
+        console.log(message);
+    }
+    inner(); // first call the inner function to later call the outer function
+}
+outer();
+*/
+
+/*
+function createCounter(){
+    let count = 0;
+
+    function increment(){
+        count++;
+        console.log(`Count increased to ${count}`);
+    }
+
+    function getCount(){
+        return count;
+    }
+
+
+    return {increment, getCount}; // calling the inner functions 
+}
+const counter = createCounter();
+counter.increment();
+counter.increment();
+console.log(`The current count is ${counter.getCount()}`);
+*/
+
+/*
+function createGame(){
+    let score = 0;
+
+    function increaseScore(points){
+        score += points;
+        // score = score + points;
+        console.log(`+${points}pts`);
+    }
+    function decreaseScore(points){
+        score -= points;
+        // score = score - points;
+        console.log(`+${points}pts`);
+    }
+    function getScore(){
+        return score;
+    }
+
+    return {increaseScore, decreaseScore, getScore}
+}
+
+const game = createGame();
+
+game.increaseScore(5);
+game.increaseScore(6);
+game.increaseScore(3);
+console.log(`The final score is ${game.getScore()}pts`)
+*/
+
+
+// setTimeout() = function in JS that allows you to schedule the execution of a function after an amount of time (ms). Times are approximate (varies based on the workload of the JS runtime env.)
+// -- setTimeout(callback, delay)
+
+
+function sayHello(){
+    window.alert("Te amo infinitamente!")
+}
+setTimeout(sayHello, 3000);
