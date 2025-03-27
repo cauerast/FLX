@@ -1973,6 +1973,6 @@ console.log(`The final score is ${game.getScore()}pts`)
 
 
 function sayHello(){
-    window.alert("Te amo infinitamente!")
+    window.alert("!")
 }
 setTimeout(sayHello, 3000);
