@@ -232,6 +232,7 @@ else{
 
 console.log(message)
 */
+
 /*
 let time = 10;
 //let greeting = time < 12 ? `Good morning!` : `Good afternoon!`
@@ -330,6 +331,7 @@ switch(true){
         break;
     default:
         letterGrade = `F`
+        break;
 }
 
 console.log(letterGrade);
@@ -639,7 +641,7 @@ submitBtn.onclick = function convert(){
 
 
 
-// ARRAYS // and // a little bit od for loops // 
+// ARRAYS // and // a little bit of for loops // 
 
 
 //fruits[3] = `Coconut`; 
@@ -660,7 +662,7 @@ let cats = [`Yuki`, `Hanabi`, `Lya`];
 for(let i = 0; i < cats.length; i++){
     console.log(cats[i]);
 }
-*/
+
 
 
 
@@ -674,7 +676,7 @@ for(let i = 1; i <= 22; i++){
         console.log(i);
     }
 }
-    */
+*/
 
 /*
 
@@ -1078,12 +1080,13 @@ function getLongWords(element){
 const prices = [5, 30, 10, 25, 15, 20];
 const total = prices.reduce(sum);
 
-console.log(`$${total.toFixed(2)}`)
+console.log(`$${total.toFixed(2)}`
 
 function sum(previous, next){
     return previous + next;
 }
 */
+
 /*
 const grades = [75, 50, 90, 80, 65, 95];
 const maximum = grades.reduce(getMax);
