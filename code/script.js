@@ -1428,7 +1428,7 @@ fish.sleep();
 fish.swim();
 */
 
-// super = keyword is used in classes to cdall the contructor or acess the properties and methods of a parent (superclass)                                                                                                                                    this = this object    super = the parent
+// super = keyword is used in classes to call the contructor or acess the properties and methods of a parent (superclass) |  this = this object    super = the parent
 
 /*
 class Animal{
@@ -1441,7 +1441,7 @@ class Animal{
         console.log(`The ${this.name} moves at a speed of ${speed}mph`);
     }
 }
-class Rabbit extends Animal{
+class Rabbit extends Animal{ 
     constructor(name, age, runSpeed){
         super(name, age);
         this.runSpeed = runSpeed;
@@ -1757,7 +1757,7 @@ fruits.push({name: `grapges`, color: `purple`, calories: 62}); // add a element 
 // pop
 fruits.pop(); // remove the last array element
 
-// splice
+// splice (remove)
 fruits.splice(1, 2); // remove a specifics array elements
 
 // forEach
@@ -1803,7 +1803,6 @@ console.log(fruits);
 let numbers = [1, 10, 2, 9, 3, 8, 4, 7, 5, 6];
 numbers.sort((a, b) => a - b); // ascending order
 // numbers.sort((a, b) => b - a); // descending order
-
 console.log(numbers);
 */
 
