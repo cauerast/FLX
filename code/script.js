@@ -1952,7 +1952,7 @@ function createGame(){
     function decreaseScore(points){
         score -= points;
         // score = score - points;
-        console.log(`+${points}pts`);
+        console.log(`-${points}pts`);
     }
     function getScore(){
         return score;
@@ -1975,7 +1975,47 @@ console.log(`The final score is ${game.getScore()}pts`)
 
 /*
 function sayHello(){
-    window.alert("!")
+    window.alert("Hello")
 }
 setTimeout(sayHello, 3000);
 */
+
+/*
+let timeoutId;
+
+function startTimer(){
+    timeoutId = setTimeout(() => window.alert("Hello"), 3000);
+    console.log("Started");
+}
+function clearTimer(){
+    clearTimeout(timeoutId);
+    console.log("Cleared");
+}
+*/
+
+/*
+function updateClock(){
+    const now = new Date();
+    let hours = now.getHours()
+    const meridian = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const minutes = now.getMinutes().toString().padStart(2, 0);
+    const seconds = now.getSeconds().toString().padStart(2, 0);
+    const timeString = `${hours}:${minutes}:${seconds} ${meridian}`;
+    document.getElementById("clock").textContent = timeString;
+}
+updateClock();
+setInterval(updateClock, 1000);
+*/
+
+function updateClock(){
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, 0);
+    const minutes = now.getMinutes().toString().padStart(2, 0);
+    const seconds = now.getSeconds().toString().padStart(2, 0);
+    const timeString = `${hours}:${minutes}:${seconds}`;
+    document.getElementById("clock").textContent = timeString;
+}
+updateClock();
+setInterval(updateClock, 1000);
