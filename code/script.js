@@ -1993,6 +1993,7 @@ function clearTimer(){
 }
 */
 
+// digital clock - w/ AM and PM // 
 /*
 function updateClock(){
     const now = new Date();
@@ -2009,6 +2010,7 @@ updateClock();
 setInterval(updateClock, 1000);
 */
 
+// digital clock - normal // 
 /*
 function updateClock(){
     const now = new Date();
@@ -2022,6 +2024,8 @@ updateClock();
 setInterval(updateClock, 1000);
 */
 
+
+// stopwatch // 
 /*
 const display = document.getElementById(`display`);
 let timer = 0;
