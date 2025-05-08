@@ -2072,3 +2072,32 @@ function update(){
 }
 */
 
+// import and export functions from outher js file // 
+// FILE 1 -- //
+/*
+export const PI = 3.14159;
+
+export function getCircumference(radius){
+    return 2 * PI * radius;
+}
+export function getArea(radius){
+    return PI * radius * radius;
+}
+export function getVolume(radius){
+    return (4/3) * PI * (radius * radius * radius);
+}
+*/
+
+// FILE 2 -- //
+/*
+import {PI, getCircumference, getArea, getVolume} from './mathUtil.js';
+
+const circumference = getCircumference(10);
+console.log(`${circumference.toFixed(2)}cm`);
+
+const area = getArea(10);
+console.log(`${area.toFixed(2)}cm^2`);
+
+const volume = getVolume(10);
+console.log(`${volume.toFixed(2)}cm^3`);
+*/
