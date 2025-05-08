@@ -2101,3 +2101,52 @@ console.log(`${area.toFixed(2)}cm^2`);
 const volume = getVolume(10);
 console.log(`${volume.toFixed(2)}cm^3`);
 */
+
+// asynchronous // 
+/*
+function func1(callback){
+    setTimeout(() => {console.log("Task1"); callback()}, 3000)
+}
+function func2(){
+    console.log("Task2")
+    console.log("Task3")
+    console.log("Task4")
+}
+
+func1(func2);
+*/
+
+// error // 
+/*
+try{
+    console.log(x);
+}
+catch(error){
+    console.log(error);
+}
+finally{
+    console.log(`This aways executes`);
+}
+console.log("You have reached the end!");
+*/
+/*
+try{
+    const dividend = Number(prompt(`Enter a dividend: `));
+    const divisor = Number(prompt(`Enter a divisor: `));
+
+    if(divisor == 0){
+        throw new Error(`You can't divide by zero!`);
+    }
+    else if(isNaN(dividend) || isNaN(divisor)){
+        throw new Error(`Values must be a number!`);
+    }
+
+    const result = dividend/divisor;
+    console.log(result);
+}
+catch(error){
+    console.error(error);
+}
+*/
+
+// calculator program // 
