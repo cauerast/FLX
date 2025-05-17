@@ -2152,6 +2152,7 @@ catch(error){
 
 
 // calculator program // 
+/*
 
 const display = document.getElementById("display");
 
@@ -2171,3 +2172,12 @@ function calculate(){
         display.value = "Error! (C)";
     }
 }
+*/
+
+document.title = "FLX"
+document.body.style.backgroundColor = "Black"
+console.dir(document)
+
+const username = ""
+const welcomeMsg = document.getElementById("welcome-msg")
+welcomeMsg.textContent += username === "" ? `Guest` : username;
