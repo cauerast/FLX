@@ -2130,6 +2130,7 @@ finally{
 console.log("You have reached the end!");
 */
 
+/*
 try{
     const dividend = Number(prompt(`Enter a dividend: `));
     const divisor = Number(prompt(`Enter a divisor: `));
@@ -2147,9 +2148,26 @@ try{
 catch(error){
     console.error(error);
 }
+*/
 
 
 // calculator program // 
 
-WebTransportBidirectionalStream = 10; 
-gendernight
+const display = document.getElementById("display");
+
+function appendToDisplay(input){
+    display.value += input;
+}
+
+function clearDisplay(){
+    display.value = "";
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error! (C)";
+    }
+}
