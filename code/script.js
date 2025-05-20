@@ -2174,10 +2174,73 @@ function calculate(){
 }
 */
 
+
+/*
+// DOM 
+
 document.title = "FLX"
-document.body.style.backgroundColor = "Black"
+document.body.style.backgroundColor = "black"
 console.dir(document)
 
-const username = ""
+///
+
+const username = "FLX"
 const welcomeMsg = document.getElementById("welcome-msg")
-welcomeMsg.textContent += username === "" ? `Guest` : username;
+welcomeMsg.style.backgroundColor = `gray`;
+welcomeMsg.textContent += username === "" ? `Guest` : username; // 
+
+///
+
+const fruits = document.getElementsByClassName(`fruits`);
+console.log(fruits);
+
+fruits[0].style.backgroundColor = `gray`
+
+for(let fruit of fruits){
+    fruit.style.backgroundColor = `red`
+}
+
+// fruits.forEach(); --> this not exist for html collections, but this exist ->
+Array.from(fruits).forEach(fruit => {
+fruit.style.backgroundColor = "lightblue"
+});
+
+///
+
+const h4Elements = document.getElementsByTagName(`h4`);
+const liElements = document.getElementsByTagName(`li`);
+console.log(h4Elements);
+h4Elements[0].style.backgroundColor = `yellow`;
+
+for(let h4Element of h4Elements){
+    h4Element.style.backgroundColor = `Purple`;
+}
+for(let liElement of liElements){
+    liElement.style.backgroundColor = `pink`;
+}
+
+Array.from(h4Elements).forEach(h4Elements => {
+    h4Elements.style.backgroundColor = `purple`
+})
+
+/// 
+
+const element = document.querySelector(`.fruits`); // selsct the first class="fruits" in the page
+const element1 = document.querySelector(`h4`); // selsct the first h4 in the page
+
+const fruits = document.querySelectorAll(`.fruits`);
+fruits[0].style.backgroundColor = `Yellow`;
+
+const foods = document.querySelectorAll(`li`);
+foods[0].style.backgroundColor = `Yellow`;
+foods.forEach(foods => {
+    foods.style.backgroundColor = `Yellow`
+})
+*/
+
+
+// DOM navegation
+
+
+
+
