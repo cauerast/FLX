@@ -2178,6 +2178,17 @@ function calculate(){
 /*
 // DOM 
 
+// The process of use the structure of an HTML document using JavaScript.
+
+// .title
+// .textContent
+// .style
+// .getElementById
+// .getElementsByClassName
+// .getElementsByTagName (h4, body, h1, p, etc)
+// .querySelector (select the first tagName in the page)
+// .querySelectorAll (select all the tagNames of a tagName in the page)
+
 document.title = "FLX"
 document.body.style.backgroundColor = "black"
 console.dir(document)
@@ -2225,8 +2236,8 @@ Array.from(h4Elements).forEach(h4Elements => {
 
 /// 
 
-const element = document.querySelector(`.fruits`); // selsct the first class="fruits" in the page
-const element1 = document.querySelector(`h4`); // selsct the first h4 in the page
+const element = document.querySelector(`.fruits`); // select the first class="fruits" in the page
+const element1 = document.querySelector(`h4`); // select the first h4 in the page
 
 const fruits = document.querySelectorAll(`.fruits`);
 fruits[0].style.backgroundColor = `Yellow`;
@@ -2241,6 +2252,75 @@ foods.forEach(foods => {
 
 // DOM navegation
 
+// The process of navigating through the structure of an HTML document using JavaScript.
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
 
+
+//.firstElementChild // 
+/*
+const element = document.getElementById('fruits');
+const firstChild = element.firstElementChild;
+firstChild.style.backgroundColor = `Yellow`;
+
+const ulElements = document.querySelectorAll(`ul`);
+ulElements.forEach(ulElements => {
+    const firstchild1 = ulElements.firstElementChild;
+    firstChild1.style.backgroundColor = `Yellow`
+});
+*/
+
+//.lastElementChild // 
+/*
+const element = document.getElementById(`fruits`);
+const lastChild = element.lastElementChild;
+lastChild.style.backgroundColor = `Yellow`
+
+const ulElements = document.querySelectorAll(`ul`)
+ulElements.forEach(ulElements => {
+    const lastChild1 = ulElements.lastElementChild;
+    lastChild1.style.backgroundColor = `red`
+});
+*/
+
+// .nextEelementSibling // 
+/*
+const element = document.getElementById(`apple`);
+const nextSibling = element.nextElementSibling;
+nextSibling.style.backgroundColor = `red`
+*/
+
+// .previousElementSibling // 
+/*
+const element = document.getElementById(`vegetables`);
+const previousSibling = element.previousElementSibling;
+previousSibling.style.backgroundColor = `red`;
+*/
+
+// .parentElement // 
+/*
+const element = document.getElementById(`carrots`);
+const parent = element.parentElement;
+parent.style.backgroundColor = `red`
+*/
+
+// .children // 
+/*
+const element = document.getElementById(`desserts`);
+const children = element.children;
+Array.from(children).forEach(child => {
+    child.style.backgroundColor = `Red`;
+});
+*/
+
+/*
+const element = document.getElementById(`desserts`)
+const children = element.children;
+children[1].style.backgroundColor = `Red`;
+*/
 
 
