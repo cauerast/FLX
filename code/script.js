@@ -2189,6 +2189,30 @@ function calculate(){
 // .querySelector (select the first tagName in the page)
 // .querySelectorAll (select all the tagNames of a tagName in the page)
 
+
+///////// HTML USED FOR THIS STEPS /////////
+
+/*
+<ul id="fruits">
+    <li id="apple">apple</li>
+    <li id="orange">orange</li>
+    <li id="banana">banana</li>
+  </ul>
+
+  <ul id="vegetables">
+    <li id="carrots">carrots</li>
+    <li id="onions">onions</li>
+    <li id="potatoes">potatoes</li>
+  </ul>
+
+  <ul id="desserts">
+    <li id="cake">cake</li>
+    <li id="pie">pie</li>
+    <li id="ice-cream">ice-cream</li>
+  </ul>
+*/
+
+/*
 document.title = "FLX"
 document.body.style.backgroundColor = "black"
 console.dir(document)
@@ -2322,5 +2346,6 @@ const element = document.getElementById(`desserts`)
 const children = element.children;
 children[1].style.backgroundColor = `Red`;
 */
+
 
 
