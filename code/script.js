@@ -2402,6 +2402,15 @@ document.body.insertBefore(newH1, boxes[3]);
 */
 
 /// ex2 /// 
+// HTML USED IN THIS // 
+/*
+<ol id="fruits">
+    <li id="apple">apple</li>
+    <li id="orange">orange</li>
+    <li id="banana">banana</li>
+</ol>
+*/
+
 /*
 const newListItem = document.createElement(`li`);
 newListItem.textContent = `coconut`;
@@ -2420,3 +2429,39 @@ document.getElementById(`fruits`).insertBefore(newListItem, listItems[4])
 
 /// Mouse events /// 
 
+// eventListener = listen for especific events to create interactive web pages events: click, mouseover, mouseout, etc.
+// .addEventListener(event, callback);
+
+const myBox = document.getElementById(`myBox`);
+
+myBox.addEventListener(`click`, function(event){
+    event.target.style.backgroundColor = `tomato`;
+    event.target.textContent = `Ouch! 🤕`;
+});
+//or usin a a arrow function =>
+myBox.addEventListener(`click`, event => {
+    event.target.style.backgroundColor = `tomato`;
+    event.target.textContent = `Ouch! 🤕`;
+});
+
+
+myBox.addEventListener(`mouseover`, function(event){
+    event.target.style.backgroundColor = `pink`
+    event.target.textContent = `DONT DO THIS!! 😑`;
+});
+//or usin a a arrow function =>
+myBox.addEventListener(`mouseover`, event => {
+    event.target.style.backgroundColor = `pink`
+    event.target.textContent = `DONT DO THIS!! 😑`;
+});
+
+
+myBox.addEventListener(`mouseout`, function(event){
+    event.target.style.backgroundColor = `lightgreen`
+    event.target.style.textContent = `Click me 😃`
+});
+//or usin a a arrow function => 
+myBox.addEventListener(`mouseout`, event => {
+    event.target.style.backgroundColor = `lightgreen`
+    event.target.style.textContent = `Click me 😃`
+});
