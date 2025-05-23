@@ -2348,4 +2348,75 @@ children[1].style.backgroundColor = `Red`;
 */
 
 
+/// ADD & CHANGE HTML in js
+
+// .createElement
+// .id
+// .append(element) -> the last child
+// .prepend(element) -> the first child
+// .insertBefore(element, element)
+
+
+/// ex1 /// 
+
+// HTML USED IN THIS // 
+/*
+ <div id="box1" class="box">
+    <p>box1</p>
+  </div>
+
+  <div id="box2" class="box">
+    <p>box2</p>
+  </div>
+
+  <div id="box3" class="box">
+    <p>box3</p>
+  </div>
+
+  <div id="box4" class="box">
+    <p>box4</p>
+  </div>
+*/
+
+/*
+const newH1 = document.createElement(`h1`);
+newH1.textContent = `I like pizza!`;
+newH1.id = `myH1`
+newH1.style.color = `tomato`
+newH1.style.textAlign = `center`
+
+document.body.append(newH1); // the last child
+document.body.prepend(newH1); // the first child
+
+document.getElementById(`box2`).append(newH1);
+
+const box2 = document.getElementById(`box2`);
+document.body.insertBefore(newH1, box2);
+
+const boxes = document.querySelectorAll(`.box`);
+document.body.insertBefore(newH1, boxes[3]);
+
+/// remove html element ->
+//document.getElementById(`box2`).append(newH1);
+//document.getElementById(box1).removeChild(newH1);
+*/
+
+/// ex2 /// 
+/*
+const newListItem = document.createElement(`li`);
+newListItem.textContent = `coconut`;
+newListItem.id = `coconut`;
+newListItem.style.fontWeight = `bold`;
+newListItem.style.backgroundColor = `red`;
+document.getElementById(`fruits`).prepend(newListItem)
+
+const orange = document.getElementById(`orange`);
+document.getElementById(`fruits`).insertBefore(newListItem, banana)
+
+const listItems = document.querySelectorAll(`#fruits li`);
+document.getElementById(`fruits`).insertBefore(newListItem, listItems[4])
+*/
+
+
+/// Mouse events /// 
 
