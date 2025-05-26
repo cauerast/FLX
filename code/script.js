@@ -2432,6 +2432,15 @@ document.getElementById(`fruits`).insertBefore(newListItem, listItems[4])
 // eventListener = listen for especific events to create interactive web pages events: click, mouseover, mouseout, etc.
 // .addEventListener(event, callback);
 
+// HTML USED -->
+/*
+<div id="myBox">
+    Click me 😃
+</div>
+  
+<button id="myButton">Click me!</button>
+*/
+/*
 const myBox = document.getElementById(`myBox`);
 
 myBox.addEventListener(`click`, function(event){
@@ -2465,3 +2474,84 @@ myBox.addEventListener(`mouseout`, event => {
     event.target.style.backgroundColor = `lightgreen`
     event.target.style.textContent = `Click me 😃`
 });
+*/
+
+//button w/ functions 
+/*
+const myBox = document.getElementById(`myBox`);
+const myButton = document.getElementById(`myButton`);
+
+myButton.addEventListener(`click`, event => {
+    myBox.style.backgroundColor = `tomato`;
+    myBox.textContent = `Ouch! 🤕`;
+});
+
+myButton.addEventListener(`mouseover`, event => {
+    myBox.style.backgroundColor = `pink`;
+    myBox.textContent = `DONT DO THIS!! 😑`;
+});
+
+myButton.addEventListener(`mouseout`, event => {
+    myBox.style.backgroundColor = `lightgreen`;
+    myBox.textContent = `Click me 😃`;
+});
+*/
+
+
+/// Key events /// 
+
+// eventListener = listen for especific events to create interactive web pages events: keydown, keyup, etc.
+// .addEventListener(event, callback);
+/*
+const myBox = document.getElementById(`myBox`);
+
+document.addEventListener(`keydown`, event =>{
+    myBox.textContent = `😎`;
+    myBox.style.backgroundColor = `red`;
+})
+
+document.addEventListener(`keyup`, event =>{
+    myBox.textContent = `😀`;
+    myBox.style.backgroundColor = `black`;
+})
+*/
+
+const myBox = document.getElementById(`myBox`);
+const moveAmount = 10;
+let x = 0;
+let y = 0;
+
+document.addEventListener(`keydown`, event =>{
+    myBox.textContent = `😎`;
+    myBox.style.backgroundColor = `red`;
+})
+
+document.addEventListener(`keyup`, event =>{
+    myBox.textContent = `😀`;
+    myBox.style.backgroundColor = `black`;
+})
+
+document.addEventListener(`keydown`, event => {
+    if(event.key.startsWith(`Arrow`)){
+
+        event.preventDefault();
+
+        switch(event.key){
+            case `ArrowUp`:
+                y -= moveAmount;
+                break;
+            case `ArrowDown`:
+                y += moveAmount;
+                break;
+            case `ArrowLeft`:
+                x -= moveAmount;
+                break;
+            case `ArrowRight`:
+                x += moveAmount;
+                break;
+        }
+
+        myBox.style.top = `${y}px`;
+        myBox.style.left = `${x}px`;
+    }
+})
