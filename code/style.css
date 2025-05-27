@@ -1,14 +1,12 @@
 body{
     background-color: rgb(255, 255, 255);
 }
-#myBox{
-    background-color: rgb(0, 0, 0);
-    width: 200px;
-    height: 200px;
-    font-size: 8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 20px;
+.myButtons{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
 }

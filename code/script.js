@@ -2440,6 +2440,26 @@ document.getElementById(`fruits`).insertBefore(newListItem, listItems[4])
   
 <button id="myButton">Click me!</button>
 */
+
+// CCS USED -->
+/*
+body{
+    background-color: rgb(255, 255, 255);
+}
+#myBox{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 200px;
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+}
+*/
+
+
 /*
 const myBox = document.getElementById(`myBox`);
 
@@ -2516,6 +2536,7 @@ document.addEventListener(`keyup`, event =>{
 })
 */
 
+/*
 const myBox = document.getElementById(`myBox`);
 const moveAmount = 10;
 let x = 0;
@@ -2554,4 +2575,61 @@ document.addEventListener(`keydown`, event => {
         myBox.style.top = `${y}px`;
         myBox.style.left = `${x}px`;
     }
+});
+*/
+
+// Hide and show html
+
+//Html used ->
+/*
+ <button id="myButton">Hide</button>
+  <br>
+  <br>
+  <img  id="myImg" src="/assets/user.png" alt="user-img">
+
+*/
+
+/*
+
+const myButton = document.getElementById(`myButton`);
+const myImg = document.getElementById(`myImg`);
+
+myButton.addEventListener(`click`, event =>{
+
+    //using display property
+
+    if(myImg.style.display === `none`){
+        myImg.style.display = `Block`;
+        myButton.textContent = `Hide`; 
+    }
+    else{
+        myImg.style.display = `none`;
+        myButton.textContent = `Show`; 
+    }
+
+    //using visibility property
+
+    if(myImg.style.visibility === `hidden`){
+        myImg.style.visibility = `visible`;
+        myButton.textContent = `Hide`; 
+    }
+    else{
+        myImg.style.visibility = `hidden`;
+        myButton.textContent = `Show`; 
+    }
 })
+*/
+
+//Nodelist - Static collection of html elements by (id, clarr, element).
+// Can be created by using querySelectorAll()
+// Similar to an array, but no (map, filter, reduce)
+// NodeList won't update to automatically reflect changes
+
+let buttons = document.querySelectorAll(`.myButtons`);
+
+buttons.forEach(button => {
+    button.style.backgroundColor = `green`;
+    button.textContent += `😀`
+})
+
+//
