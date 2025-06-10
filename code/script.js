@@ -2620,7 +2620,7 @@ myButton.addEventListener(`click`, event =>{
 })
 */
 
-//Nodelist - Static collection of html elements by (id, clarr, element).
+//Nodelist - Static collection of html elements by (id, class, element).
 // Can be created by using querySelectorAll()
 // Similar to an array, but no (map, filter, reduce)
 // NodeList won't update to automatically reflect changes
