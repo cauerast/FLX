@@ -2625,11 +2625,90 @@ myButton.addEventListener(`click`, event =>{
 // Similar to an array, but no (map, filter, reduce)
 // NodeList won't update to automatically reflect changes
 
-let buttons = document.querySelectorAll(`.myButtons`);
 
+/*
+//Html used right here: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLX</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <button class="myButtons">Button 1</button>
+  <button class="myButtons">Button 2</button>
+  <button class="myButtons">Button 3</button>
+  <button class="myButtons">Button 4</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+*/
+
+// base content =>
+// let buttons = document.querySelectorAll(`.myButtons`);
+
+/*
 buttons.forEach(button => {
     button.style.backgroundColor = `green`;
     button.textContent += `😀`
 })
+*/
 
-//
+/*
+buttons.forEach(button => {
+    button.addEventListener("click", event => 
+        event.target.style.backgroundColor = "tomato"
+    )
+})
+*/
+
+/*
+buttons.forEach(button => {
+    button.addEventListener("mouseover", event => {
+        event.target.style.backgroundColor = `gray`
+    });
+});
+buttons.forEach(button => {
+    button.addEventListener("mouseout", event => {
+        event.target.style.backgroundColor = `black`
+    });
+});
+*/
+
+/*
+// to create a new element
+const newButton = document.createElement("button"); // step 1
+newButton.textContent = "Button 5"; // step 2
+newButton.classList = "myButtons";
+document.body.appendChild(newButton); // step 3
+
+buttons = document.querySelectorAll(".myButtons");
+
+console.log(buttons)
+*/
+
+/*
+//to delete/remove an element
+buttons.forEach(button => {
+    button.addEventListener(`click`, event => {
+        event.target.remove(); // remove from DOM
+        buttons = document.querySelectorAll(".myButtons"); // remove from NodeList
+        console.log(buttons);
+    });
+});
+*/
+
+
+// classList = Element property in JS used to interact with an element`s list of classes (CSS classes). Allows you to make reusable classes for many elements across your webpage
+// add()
+// remove()
+// togle(remove if present, Add if not)
+// replace(OldClass, NewCLass)
+// contains()
