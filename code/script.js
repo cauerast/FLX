@@ -2590,7 +2590,6 @@ document.addEventListener(`keydown`, event => {
 */
 
 /*
-
 const myButton = document.getElementById(`myButton`);
 const myImg = document.getElementById(`myImg`);
 
@@ -2707,8 +2706,57 @@ buttons.forEach(button => {
 
 
 // classList = Element property in JS used to interact with an element`s list of classes (CSS classes). Allows you to make reusable classes for many elements across your webpage
-// add()
-// remove()
-// togle(remove if present, Add if not)
-// replace(OldClass, NewCLass)
-// contains()
+// add();
+// remove();
+// toggle(remove if present, Add if not);
+// replace(OldClass, NewCLass);
+// contains();
+/*
+let buttons = document.querySelectorAll(".myButtons");
+
+buttons.forEach(button => {
+    button.classList.add("enabled");
+});
+
+buttons.forEach(button => {
+    button.addEventListener("mouseover", event => {
+        event,EventTarget.classList.toggle("hover")
+    });
+});
+*/
+// continue...
+
+// rock paper scissors - game
+/*
+const choices = [`rock`, `paper`, `scissors`];
+const playerDisplay = document.getElementById(`playerDisplay`);
+const computerDisplay = document.getElementById(`computerDisplay`);
+const resultDisplay = document.getElementById(`resultDisplay`);
+
+function playGame(playerChoice){
+    const computerChoice = choices[Math.floor(Math.random() * 3)];
+    let result = "";
+
+    if(playerChoice === computerChoice){
+        result = `IT'S A TIE!`;
+    }
+    else{
+        switch(playerChoice){
+            case "rock":
+                result = (computerChoice === `scissor`) ? `You Win!` : `You Lose!`;
+                break;
+            case "paper":
+                result = (computerChoice === `rock`) ? `You Win!` : `You Lose!`;
+                break;
+            case "scissors":
+                result = (computerChoice === `paper`) ? `You Win!` : `You Lose!`;
+                break;
+                
+        }
+    }
+
+    playerDisplay.textContent = `Player: ${playerChoice}`;
+    computerDisplay.textContent = `Computer: ${computerChoice}`;
+    resultDisplay.textContent = result;
+}
+*/
