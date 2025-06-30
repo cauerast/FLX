@@ -2727,6 +2727,26 @@ buttons.forEach(button => {
 // continue...
 
 // rock paper scissors - game
+
+/*
+
+html used
+
+
+  <h1>Rock - Paper - Scissors</h1>
+
+  <div class="choices">
+    <button onclick="playGame(`rock`)">👊</button>
+    <button onclick="playGame(`paper`)">✋</button>
+    <button onclick="playGame(`scissors`)">✌</button>
+  </div>
+
+  <div id="playerDisplay">PLAYER: </div>
+  <div id="computerDisplay">COMPUTER: </div>
+  <div id="resultDisplay"></div>
+  
+*/
+
 /*
 const choices = [`rock`, `paper`, `scissors`];
 const playerDisplay = document.getElementById(`playerDisplay`);
@@ -2759,4 +2779,79 @@ function playGame(playerChoice){
     computerDisplay.textContent = `Computer: ${computerChoice}`;
     resultDisplay.textContent = result;
 }
+*/
+
+//Callback Hell = situation in javascript where callbacks are nested within othor callbacks to the degree where the code is difficult to read. Old pattern to hand;e asynchonous functions. Use promises + async/await to avoid callback hell
+
+/*
+function task1(callback){
+    setTimeout(() => {
+        console.log(`task 1 complete!`)
+        callback();
+    }, 2000);
+}
+function task2(callback){
+    setTimeout(() => {
+        console.log(`task 2 complete!`);
+        callback();
+    }, 1000);
+}
+function task3(callback){
+    setTimeout(() => {
+        console.log(`task 3 complete!`);
+        callback();
+    }, 3000);
+}
+function task4(callback){
+    setTimeout(() => {
+        console.log(`task 4 complete!`);
+        callback();
+    }, 1500)
+}
+
+task1(() => {
+    task2(() => {
+        task3(() => {
+            task4(() => {
+                console.log(`All tasks complete!`)
+            });
+        });
+    });
+});
+*/
+
+// Promise = An object that menages asynchronous operations. Wrap a promise object around {asunchronous code} `I promise to return a value` PENDINS -> RESOLVED or REJECTED. New Promise((resolve, rejected) => {asynchronous code})
+
+//do this in order -> 1.walk the dog | 2.clean the kitchen | 3. take out the trash.
+
+// Unsing calback hell
+/*
+function walkDog(callback){
+    setTimeout(() => {
+        console.log(`You walk the dog!`)
+    }, 1500)
+    callback();
+}
+
+function cleanKitchen(callback){
+    setTimeout(() => {
+        console.log(`You clean the kitchen!`)
+    }, 2500)
+    callback();
+}
+
+function walkDog(callback){
+    setTimeout(() => {
+        console.log(`You take out the trash !`)
+    }, 500)
+    callback();
+}
+
+walkDog(() => {
+    cleanKitchen(() => {
+        takeOutTrash(() => {
+            console.log(`You finished the chores!`)
+        })
+    })
+})
 */
