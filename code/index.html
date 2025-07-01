@@ -9,18 +9,10 @@
 </head>
 <body>
   
-  <h1>Rock - Paper - Scissors</h1>
+  <input type="text" id="pokemonName" placeholder="Enter a pokemon name...">
+  <button onclick="fetchPokemon()">Fetch Pokemon</button>
 
-  <div class="choices">
-    <button onclick="playGame(`rock`)">👊</button>
-    <button onclick="playGame(`paper`)">✋</button>
-    <button onclick="playGame(`scissors`)">✌</button>
-  </div>
-
-  <div id="playerDisplay">PLAYER: </div>
-  <div id="computerDisplay">COMPUTER: </div>
-  <div id="resultDisplay"></div>
-
+  <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
   <script src="74.js"></script>
 </body>
 </html>
