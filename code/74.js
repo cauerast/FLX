@@ -3,6 +3,14 @@
 // fetch(url, {options});
 
 
+// html used 
+/*
+  <input type="text" id="pokemonName" placeholder="Enter a pokemon name...">
+  <button onclick="fetchPokemon()">Fetch Pokemon</button>
+
+  <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+*/
+
 // unsing async await => 
 
 async function fetchPokemon(){
